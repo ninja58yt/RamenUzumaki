@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'open sans';
+}
+
+.titulo {
+    color: #f5b019;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #f12711; 
+     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(41, 92%, 53%, 0.5), hsla(6, 89%, 51%, 0.5)),url(../img/portada.png); 
+     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(41, 92%, 53%, 0.5), hsla(6, 89%, 51%, 0.5)),url(../img/portada.png); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/* menu */
+.encabezado{
+    background: rgba(85, 62, 12, 0.55);
+    width: 100%;
+    height: 52px;
+}
+
+.asd{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.encabezado nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yu{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+}
+
+.yu:hover{
+    background: rgb(204, 149, 29, 0.55);
+}
+
+.encabezado nav ul li ul{
+    display:  flex;
+    flex-direction: column;
+}
+
+.encabezado nav ul li ul {
+    position: absolute;
+    background: rgba(85, 62, 12, 0.55);
+}
+.encabezado nav ul li ul li{
+    width: 147px;
+    position: relative;
+}
+
+.encabezado nav ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+
+.encabezado nav ul li ul{
+    display: none;
+}
+
+.encabezado nav ul li:hover > ul{
+    display: block;
+}
+
+/* menu */
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+    
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* menu */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 32%;
+    height: 32%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 40%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: hsl(41, 81%, 41%);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*teuchi*/
+
+.subtitulo{
+    color:#f5b019;
+}
+
+.teuchi{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.imagen_teuchi{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.texto_teuchi_2{
+    width: 80%;
+    margin: auto;
+}
+
+.presentacion_cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#fff;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+/*galeria*/
+
+.galeriaM{
+   font-weight: 400;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 25px;
+   color: #f5b019;
+   background: rgb(245, 245, 245);
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.galeria a:hover img{
+    filter: blur(1px);
+    transform: rotate(5deg) scale(1.3);
+}
+
+.caja_xd{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.caja_xd img{
+    width: 90vh;
+    max-height: 90vh;
+    border-radius: 5%;
+}
+
+.caja_xd:target{
+    transform: scale(1);
+}
+
+.cerrar{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #dd9e17;
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.siguiente{
+    display: block;
+    background: #dd9e17;
+    color: white;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 40%;
+}
+
+.mapa{
+    background: rgb(245, 245, 245);
+    text-align: center;
+    padding: 10px;
+    color: #dd9e17;
+}
+
+.mapa img{
+    padding: 12px;
+}
+
